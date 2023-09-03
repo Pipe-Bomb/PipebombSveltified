@@ -1,13 +1,7 @@
-//Font Imports
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-//Fonts
-$primary-font-family: 'Poppins', sans-serif;
-$secondary-font-family: 'Inter', sans-serif;
 
 //Base Colors
-$text: #eff9fb;
+$text: rgb(239, 249, 251);
 $background: #081e20;
 $primary: #2fa7b6;
 $secondary: #051314;
@@ -18,6 +12,7 @@ $hovered-text: #eff9fb;
 $hovered-primary: #081e20;
 $hovered-secondary: #eff9fb;
 $hovered-accent: #081e20;
+$hovered-background: #2fa7b6;
 
 $error: #f12b5e;
 $success: #04cb7d;

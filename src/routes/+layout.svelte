@@ -1,9 +1,18 @@
-<h1>Hey</h1>
-<slot />
+<script>
+    import Sidebar from "../components/sidebar.svelte";
+</script>
 
-<style>
+<slot />
+<Sidebar />
+
+<style lang="scss">
+    @import "../variable.scss";
+
     :global(body) {
         margin: 0;
         padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: $background;
+        overflow-y: hidden;
     }
 </style>
