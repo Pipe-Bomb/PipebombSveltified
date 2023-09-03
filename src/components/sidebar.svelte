@@ -247,8 +247,6 @@
                     width: 45px;
                     height: 45px;
                     margin-left: 20px;
-                    border-radius: 15px;
-                    background-color: $secondary;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -256,9 +254,11 @@
                     cursor: pointer;
 
                     img {
-                        width: 65%;
+                        width: 100%;
+                        border-radius: 15px;
                         height: auto;
                         user-select: none;
+                        filter: grayscale(100%);
                     }
                 }
 
@@ -270,7 +270,14 @@
                     user-select: none;
                 }
                 &:hover {
-                    scale: 1.05;
+                    .playlist-background {
+                        background-color: $secondary;
+                        border-radius: 15px;
+                        img {
+                            filter: grayscale(0%);
+                            transition: 0.5s;
+                        }
+                    }
                     cursor: pointer;
                     transition: 1s;
                 }
