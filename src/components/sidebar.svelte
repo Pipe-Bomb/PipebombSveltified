@@ -241,7 +241,6 @@
                 flex-direction: row;
                 align-items: center;
                 margin-bottom: 10px;
-                width: 100%;
 
                 .playlist-background {
                     width: 45px;
@@ -271,14 +270,20 @@
                 }
                 &:hover {
                     .playlist-background {
-                        background-color: $secondary;
+                        left: 0;
                         border-radius: 15px;
                         img {
                             filter: grayscale(0%);
                             transition: 0.5s;
                         }
                     }
+                    h1 {
+                        transition: 0.5s;
+                    }
                     cursor: pointer;
+                    width: 80%;
+                    background-color: $secondary;
+                    border-radius: 15px;
                     transition: 1s;
                 }
             }
